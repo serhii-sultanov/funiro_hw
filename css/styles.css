@@ -13,15 +13,11 @@ body {
 	background-color: rgba(196, 196, 196, 0.75);
 	display: flex;
 	align-items: center;
-}
-
-.footer {
-	margin-top: 183px;
+	justify-content: center;
 }
 
 .nav {
 	width: 1025px;
-	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 }
@@ -63,29 +59,30 @@ body {
 	color: #3A3A3A;
 }
 
-.gallery {
+.products {
 	width: 1025px;
 	margin: 0 auto;
 	margin-top: 38px;
 	display: flex;
 	flex-flow: row wrap;
+	padding-bottom: 183px;
 }
 
-.main-content {
+.product-card {
 	width: 294px;
 	margin: 0 71px 47px 0;
 }
 
-.gallery div:nth-child(3n+3) {
+.product-card:nth-child(3n) {
 	margin: 0;
 }
 
-.main-content-img {
+.card-img {
 	height: 301px;
 	position: relative;
 }
 
-.main-content-img:hover:before {
+.product-card:hover .card-img:before {
 	content: "";
 	display: block;
 	width: 100%;
@@ -103,8 +100,8 @@ body {
 	background-color: #E97171;
 	border-radius: 50%;
 	position: absolute;
-	right: 8%;
-	top: 5%;
+	right: 25px;
+	top: 15px;
 	color: #fff;
 }
 
@@ -114,13 +111,13 @@ body {
 	background-color: #2EC1AC;
 	border-radius: 50%;
 	position: absolute;
-	right: 8%;
-	top: 5%;
+	right: 25px;
+	top: 15px;
 	color: #fff;
 	font-size: 16px;
 } 
 
-.icn-star:after {
+.favorite:after {
 	content: "";
 	background-image: url("../img/star.svg");
 	display: block;
@@ -129,26 +126,24 @@ body {
 	background-color: #EAD836;
 	border-radius: 50%;
 	position: absolute;
-	right: 8%;
-	top: 5%;
+	right: 25px;
+	top: 15px;
 	color: #fff;
 	background-repeat: no-repeat;
 	background-position: center;
 } 
 
-.main-content-img img {
+.card-img img {
 	width: 100%;
 	height: 100%;
 }
 
-.main-content-text {
+.card-text {
 	padding: 16px 0 30px 16px;
 	background-color: #F4F5F7;
-	display: flex;
-	flex-direction: column;
 }
 
-.content-name {
+.product-name {
 	font-size: 24px;
 	line-height: 29px;
 	color: #3A3A3A;
@@ -156,7 +151,7 @@ body {
 	margin-bottom: 8px;
 }
 
-.content-kinds {
+.product-kinds {
 	font-size: 16px;
 	line-height: 24px;
 	color: #898989;
@@ -168,7 +163,7 @@ body {
 	align-items: center;
 }
 
-.content-price {
+.product-price {
 	font-size: 20px;
 	line-height: 30px;
 	font-weight: 600;
@@ -176,7 +171,7 @@ body {
 	margin-right: 16px;
 }
 
-.content-price-crossed {
+.product-price-crossed {
 	font-size: 16px;
 	line-height: 24px;
 	color: #B0B0B0;
@@ -189,7 +184,7 @@ body {
 	justify-content: space-between;
 }
 
-.footer-nav {
+.footer-inner {
 	font-size: 18px;
 	line-height: 21px;
 	font-weight: 600;
